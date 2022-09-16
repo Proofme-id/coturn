@@ -11,6 +11,7 @@ ENV TURN_SERVER_NAME proofme
 ENV TURN_REALM proofme.id
 
 ADD start.sh start.sh
+ADD version.json version.json
 RUN chmod +x start.sh
 
 CMD ["./start.sh"]
