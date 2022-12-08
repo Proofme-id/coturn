@@ -1,7 +1,7 @@
 FROM ubuntu:20.04
 MAINTAINER ProofMe <info@proofme.id>
 
-RUN apt-get update && apt-get install -y coturn && apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+RUN apt-get update && apt-get install -y coturn curl && apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 ENV TURN_PORT 3478
 ENV TURN_PORT_START 49152
