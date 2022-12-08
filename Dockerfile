@@ -9,6 +9,8 @@ ENV TURN_PORT_END 65535
 ENV TURN_SECRET mysecret
 ENV TURN_SERVER_NAME proofme
 ENV TURN_REALM proofme.id
+ENV USER_QOUTA 0
+ENV TOTAL_QOUTA 0
 
 ADD start.sh start.sh
 ADD version.json version.json
